@@ -2,10 +2,10 @@
 slug: greetings
 title: Greetings!
 authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
+  - name: kokiers
+    <!-- title: test greeting -->
+    url: https://github.com/kokiers
+    image_url: https://avatars.githubusercontent.com/u/16663798?v=4
 tags: [greetings]
 ---
 
@@ -13,8 +13,7 @@ Congratulations, you have made your first post!
 
 Feel free to play around and edit this post as much you like.
 
-Markdown text with [links](../docs/hello.md)
-Let's see how to [Create a page](/create-a-page).
+
 
 
 :::danger  My tip
