@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'kokiers', // Usually your GitHub org/user name.
-  projectName: 'mywebsite', // Usually your repo name.
+  projectName: 'blogwebsite', // Usually your repo name.
 
   presets: [
     [
@@ -110,7 +110,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} By kokiers`,
       },
       prism: {
         theme: lightCodeTheme,
