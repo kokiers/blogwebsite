@@ -9,13 +9,13 @@ const config = {
   title: 'kokiers',
   tagline: 'Dinosaurs are cool',
   url: 'https://kokiers.github.io', //https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/blogwebsite/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'kokiers', // Usually your GitHub org/user name.
   projectName: 'blogwebsite', // Usually your repo name.
-  // deploymentBranch: 'gh-pages',
+  deploymentBranch: 'gh-pages',
   // githubHost: 'github.com',
   // githubPort: '22',
 
@@ -31,12 +31,15 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: 'Docusaurus 博客！',
+          blogDescription: '这是个用 Docusaurus 搭建的博客！',
+          postsPerPage: 10,
+          // routeBasePath: '/', // 需要删除./src/pages/index.js
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
@@ -80,6 +83,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+    plugins: ['docusaurus-plugin-sass'],
 };
 
 module.exports = config;
