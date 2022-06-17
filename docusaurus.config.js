@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'kokiers',
   tagline: 'Dinosaurs are cool',
   url: 'https://kokiers.github.io', //https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -15,16 +15,19 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'kokiers', // Usually your GitHub org/user name.
   projectName: 'blogwebsite', // Usually your repo name.
+  // deploymentBranch: 'gh-pages',
+  // githubHost: 'github.com',
+  // githubPort: '22',
 
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        docs: 
+        {
+          sidebarPath: require.resolve('./sidebars.js'),          
+          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',// Please change this to your repo.
         },
         blog: {
           showReadingTime: true,
@@ -47,18 +50,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'kokiers',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'kokiers Site Logo',
           src: 'img/mai.jpg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/kokiers',
@@ -69,47 +72,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
-        ],
+        links: [],    
         copyright: `Copyright © ${new Date().getFullYear()} By kokiers`,
       },
       prism: {
